@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnimeStream - Watch Anime Online</title>
+    <link rel="stylesheet" href="/src/styles/main.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <img src="https://images.unsplash.com/photo-1614583225154-5fcdda07019e?w=48&h=48&fit=crop" alt="Logo" class="nav-logo">
+            <h1>AnimeStream</h1>
+        </div>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search anime...">
+        </div>
+        <div class="nav-links">
+            <a href="#home" class="active">Home</a>
+            <a href="#trending">Trending</a>
+            <a href="#categories">Categories</a>
+        </div>
+    </nav>
+
+    <main>
+        <section id="featured" class="featured-section">
+            <div class="featured-content">
+                <h2>Featured Anime</h2>
+                <div class="featured-slider" id="featuredSlider"></div>
+            </div>
+        </section>
+
+        <section id="trending" class="trending-section">
+            <h2>Trending Now</h2>
+            <div class="anime-grid" id="trendingGrid"></div>
+        </section>
+
+        <section id="player" class="player-section hidden">
+            <div class="video-container">
+                <video id="videoPlayer" controls>
+                    <source src="" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="video-info">
+                    <h2 id="videoTitle"></h2>
+                    <p id="videoDescription"></p>
+                </div>
+            </div>
+            <div class="episode-list" id="episodeList"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 AnimeStream. For educational purposes only.</p>
+    </footer>
+
+    <script type="module" src="/src/js/main.js"></script>
+</body>
+</html>
